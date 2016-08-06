@@ -1,0 +1,272 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home: Hotel&amp;Spa</title>
+    <link rel="stylesheet" href="css/app.min.css">
+  </head>
+
+
+  <body>
+
+  <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+          <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
+            <h3 class="text-center">Navigation</h3>
+            <ul class="menu vertical" data-drilldown>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li class="has-submenu is-drilldown-submenu-parent"><a href="#">Rooms</a>
+                    <ul class="menu vertical">
+                        <li><a href="#">Room 01</a></li>
+                        <li><a href="#">Room 02</a></li>
+                        <li><a href="#">Room 03</a></li>
+                        <li><a href="#">Room 04</a></li>
+                        <li><a href="#">Room 05</a></li>
+                        <li><a href="#">Room 06</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div><!-- off-canvas -->
+
+
+          <div class="off-canvas-content" data-off-canvas-content>
+
+                <section class="promo-video">
+                  <div id="overlay"></div>
+                  <img class="home-img" src="images/gallery/fullsize/image06.jpg" alt="">
+                  <video id="video" autoplay loop>
+                    <source src="zassets/videos/videobg.mp4" type="video/mp4">
+                    <source src="zassets/videos/videobg.webm" type="video/webm">
+                    <source src="zassets/videos/videobg.ogv" type="video/ogv">
+                  </video>
+
+                  <div class="headliner">
+                   <div class="column row">
+                        <h1 class="text-center">Passion for Excellence</h1>
+                   </div>
+                  </div><!-- headliner -->
+
+                  <div class="header-content">
+                    <div class="row">
+                      <div class="medium-4 columns">
+                        <img src="images/logo.svg" alt="logo">
+                      </div>
+
+                      <div class="medium-4 columns">
+                        <a class="menu-icon float-right" data-open="mainMenu"></a>
+                      </div>
+                    </div>
+                  </div><!-- header-content -->
+                </section>
+
+
+                <section class="rooms row">
+                    <h2>Our Rooms</h2>
+
+                    <div class="medium-4 columns">
+                        <div class="room-image">
+                            <img src="images/rooms/room-01.jpg" alt="room 1">
+                            <div class="room-title">
+                                <h3>Room 1</h3>
+                            </div>
+                        </div>
+                        <div class="room-content">
+                            <p>Phasellus cursus, est vitae auctor faucibus, metus lacus rhoncus metus, sed commodo ante mi id dui. Suspendisse.</p>
+                        </div>
+                    </div>
+
+                    <div class="medium-4 columns">
+                        <div class="room-image">
+                            <img src="images/rooms/room-02.jpg" alt="room 2">
+                            <div class="room-title">
+                                <h3>Room 2</h3>
+                            </div>
+                        </div>
+                        <div class="room-content">
+                            <p>Phasellus cursus, est vitae auctor faucibus, metus lacus rhoncus metus, sed commodo ante mi id dui. Suspendisse.</p>
+                        </div>
+                    </div>
+
+                    <div class="medium-4 columns">
+                        <div class="room-image">
+                            <img src="images/rooms/room-03.jpg" alt="room 3">
+                            <div class="room-title">
+                                <h3>Room 3</h3>
+                            </div>
+                        </div>
+                        <div class="room-content">
+                            <p>Phasellus cursus, est vitae auctor faucibus, metus lacus rhoncus metus, sed commodo ante mi id dui. Suspendisse.</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <div class="row columns">
+                    <a class="button float-right">View All</a>
+                </div>
+
+                <!-- Seperator Image -->
+                <div class="separator-image pool-image"></div>
+
+                <!-- About Us and Gallery -->
+                <section class="about-us-gallery">
+                    <div class="medium-6 columns empty"></div>
+                    <div class="medium-6 columns empty bluebg"></div>
+
+                    <div class="content-about-us">
+                        <div class="row ">
+                            <div class="medium-6 columns">
+                                <h2>About Us</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae veniam nesciunt repellendus, iure commodi, sint quibusdam ipsam magni cumque perferendis ullam nihil, aperiam corporis unde mollitia, aliquid quos blanditiis.</p>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt optio voluptatibus reiciendis nam dolorum quae quo quod tempora numquam nihil, minus dicta sed aliquam molestias, soluta ea a mollitia labore ullam. Fuga at ea dolorem eius tempore nulla mollitia natus odit repellat quos earum commodi assumenda unde dolore adipisci vero harum, labore eos, deleniti! </p>
+                            </div>
+
+                            <!-- Modals -->
+                            <div class="reveal" id="galleryModal" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+                                <img src="" id="imageContainer">
+                                <button class="close-button" data-close aria-label="Close reveal" type="button"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <!-- End of modals -->
+
+                            <div id="gallery" class="medium-6 columns bluebg">
+                                <h2 class="white">Gallery</h2>
+                                    <div class="row small-up-3 medium-up-3 large-up-3">
+
+                                        <div class="column"><a data-open="galleryModal"><img class="thumbnail"  src="images/gallery/thumbnail/image01.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="column"><a data-open="galleryModal"><img class="thumbnail"  src="images/gallery/thumbnail/image02.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="column"><a data-open="galleryModal"><img class="thumbnail"  src="images/gallery/thumbnail/image03.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="column"><a data-open="galleryModal"><img class="thumbnail"  src="images/gallery/thumbnail/image04.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="column"><a data-open="galleryModal"><img class="thumbnail"  src="images/gallery/thumbnail/image05.jpg" alt=""></a>
+                                        </div>
+
+                                        <div class="column"><a data-open="galleryModal"><img class="thumbnail"  src="images/gallery/thumbnail/image06.jpg" alt=""></a>
+                                        </div>
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Seperator Image -->
+                <div class="separator-image bar-image"></div>
+
+
+                <!-- Booking Section -->
+                <section class="booking row">
+                    <div class="large-8 large-centered columns text-center">
+                        <h2>Book Now</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam fugit delectus enim, sapiente, neque inventore quia dolorum doloremque incidunt laudantium deleniti ipsa est doloribus modi? Omnis illum, consequuntur iste qui!</p>
+                        <a data-open="modalBook" class="button">book now</a>
+                    </div>
+                </section>
+
+                <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+                    <h2 class="text-center">Booking Form</h2>
+                    <form data-abide novalidate>
+
+                       <div class="alert callout" style="display:none;" data-abide-error>
+                        <p><span class="i fi-alert">There is missing info in the form</span></p>
+                       </div>
+
+                        <div class="row columns">
+                            <label>Name:
+                                <input type="text" placeholder="Your name.." required>
+                                <span class="form-error"><i class="fialert">Your name is required.</i></span>
+                            </label>
+                        </div>
+
+                        <div class="row columns">
+                            <label>Email:
+                                <input type="text" placeholder="Your email.." required pattern="email">
+                                <span class="form-error"><i class="fialert">Your email is required.</i></span>
+                            </label>
+                        </div>
+
+                        <div class="row columns">
+                            <label>Phone #:
+                                <input type="text" placeholder="Your phone number.." required pattern="number">
+                                <span class="form-error"><i class="fialert">Your phone number is required.</i></span>
+                            </label>
+                        </div>
+
+                        <div class="row columns">
+                            <label>Message:
+                                <textarea placeholder="Your message"></textarea>
+                            </label>
+                        </div>
+
+                        <div class="row columns">
+                            <input type="submit" class="button" value="Submit">
+                            <button class="button success" type="reset" value="reset">Reset</button>
+                        </div>
+
+                        <button class="close-button" data-close aria-label="Close reveal" type="button"><span aria-hidden="true">&times;</span></button>
+                    </form>
+                </div>
+
+
+                <footer class="bluebg">
+                    <div class="row">
+                        <nav class="large-5 columns">
+                            <ul class="vertical menu large-horizontal">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Rooms</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="contact-information large-3 columns">
+                            <ul class="no-bullet vertical">
+                                <li><i class="fi-marker"></i>
+                                    842 State Street East New Albany IN 47150
+                                </li>
+                                <li><i class="fi-telephone"></i> +1-202-555-0145</li>
+                                <li><i class="fi-mail"></i> <a href="mailto:#">contact@hotel&amp;spa.com</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="about-us large-4 columns">
+                            <h4>About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto nisi alias voluptates provident molestiae est, placeat tempora!</p>
+                            <ul class="menu align-right">
+                                <li><a href="#"><i class="fi-social-twitter"></i></a></li>
+                                <li><a href="#"><i class="fi-social-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="text-center">All Rights Reserved Hotel &amp; Spa 2015.</p>
+                </footer>
+
+
+          </div><!-- off-canvas-content  -->
+
+
+      </div><!--  off-canvas-wrapper-inner  -->
+  </div><!--  off-canvas-wrapper  -->
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/what-input/what-input.min.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.min.js"></script>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
