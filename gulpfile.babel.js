@@ -48,8 +48,8 @@ const path = {
     },
     watch: {
         html:       './*.html',
-        sass:       './scss/**/*.scss',
-        js:         './scripts/**/*.js',
+        sass:       './assets/scss/**/*.scss',
+        js:         './assets/scripts/**/*.js',
         images:     './assets/images/**/*.{png,jpeg,jpg,svg,gif}'
     },
     dest: {
