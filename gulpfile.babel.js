@@ -135,7 +135,7 @@ gulp.task('dev:build',
     )
 );
 
-gulp.task('default', gulp.series('dev'));
+gulp.task('default', gulp.series('dev:build'));
 
 
 // ---------------------------------------------------------------
